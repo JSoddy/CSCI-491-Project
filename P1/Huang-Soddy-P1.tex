@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+
+%opening
+\title{TODO: Title Here}
+\author{TODO: Group Number Here\\ TODO: Group Names Here}
+
+\begin{document}
+
+\maketitle
+
+TODO: brief introduction
+
+\section{Direction 1}
+ English Letter Recognition
+
+Though there are only 26 letters in the English alphabet, people's handwriting of them 
+can differ a lot. Different writings of one letter, which can be seen as an invariant, 
+pose a challenge to a computer program which is supposed to accept standardized input. 
+However, there are certain patterns involved in the writing of letters which may enable 
+us to use the letter invariant to group different writings together. For instance, a 
+"C" is not supposed to have a loop, or  it would look like "O". Such an observation, in 
+fact, corresponds to part of topology concerning loops. Referring to Wiki, we find there 
+are Homeomorphism groups of letter as follows: (A,R),(B),(C,G,I,J,L,M,N,S,U,V,W,Z),(D,O),
+(E,F,T,Y),(H,K),(P,Q) and (X). This means that the topological properties of the English 
+letters can facilitate letter recognition a lot, since humans follow the topological rule 
+when writing and there are fewer candidates of letters to be recognized once the letters 
+are categorized topologically. 
+
+The data we use for this proposed project may be our own handwriting of letters. We may 
+start writing letters by printing. When our program can recognize printed letters, we may 
+proceed to test it on some more cursive letters. If the program can't distinguish 
+between some handwritten letters, we group these letters and see what extra rules can be 
+added to the program in order to endow it with more tolerance of human writing.   
+
+As the input of a handwritten letter is a whole set of pixels, the first step connects 
+the pixels to find if there's any loops. After this step, all handwritten letters are 
+transformed into connected graphs, which then are put into different Homeomorphism 
+groups. There are two Homeomorphism groups with only one element, so we can easily 
+figure out who they are using a program. When dealing with other groups, we may 
+subdivide the groups into groups including more similar items by applying some criteria 
+that enables a program to distinguish between groups. There are lots of references 
+and resources we can draw on to create criteria for our program, if we have a hard 
+time figuring out the rules for the program. We may deepen the recognition program 
+to be tolerant of cursive hand writing by integrating more rules in a concerted way, 
+if time allows.
+
+
+
+\section{Direction 2}
+Distinguishing between a hand and a foot
+
+The input image is a hand or a foot which will be translated into black and white 
+pictures. we have pixels of an image after this. Topologically, the invariants are 
+the hand and the foot, though, different angles of photo shooting produce different 
+sets of pixels. Regardless of the shoot angle, the hand may take on different 
+configurations which pose a challenge to a program that attempts to recognize it. 
+We start with very "standard" images of feet or hands to see if the designed program 
+distinguish between them. 
+
+The first step involved is translating the image into a black and white picture. The 
+technique required here can be easily found. Then it'll be  translating the pixels 
+into a connected graph. To find a way to bin the data points takes some topological 
+stuff such as the shape of the bin to be used, the distance between points, and the 
+direction. As the invariants are certain, all we need to do is using different criteria 
+to order to easily find out the invariants that represent the shape of a hand or a foot. 
+Different shapes of bins may be tried, as well as different distances between pixels. 
+If the program can achieve a connected graph we'll add some more rules to the program 
+involving the numerical differences between two invariants. Then tests will be put on 
+different input images to see how tolerant of different angles of photo shooting the 
+program is. If this goal is achieved and if time allows, we may proceed to add more 
+rules to the program to endow it with more tolerance of different configurations of 
+hands and feet. 
+
+\section{Discussion}
+It is usually nice to conclude any write-up.
+
+\end{document}
