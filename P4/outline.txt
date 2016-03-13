@@ -2,6 +2,11 @@ Goals/ideas
 
 Visualizations
   Hand strength, player's map, distance comparison
+  
+Conclusions, ideas we have drawn
+  Player's characteristics, personality traits we can deduce
+  Difference in people's data point maps
+  How do these factors correlate to winrate
 
 What we are doing with data
   transformations, techniques, reasons
