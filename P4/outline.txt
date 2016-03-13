@@ -1,0 +1,9 @@
+Goals/ideas
+
+Visualizations
+  Hand strength, player's map, distance comparison
+
+What we are doing with data
+  transformations, techniques, reasons
+
+Future directions
