@@ -1,0 +1,14 @@
+Positions off button: 0-10
+
+{
+Size of raises: Relative to pot? Relative to bb?
+# of calls: 0 – 4
+# of raises: 0 – 2
+}
+
+{
+Total # big blinds called
+Total # big blinds raised
+}
+
+Include winrates
