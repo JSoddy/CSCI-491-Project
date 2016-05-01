@@ -27,6 +27,41 @@ uniform as we would like. There are still some challenges ahead in finishing our
 project, but we have a solid basis to present and write up if our remaining work
 does not come up with stronger results.
 
+Topology has long been used to study games. Many properties of games
+lend themselves well to topological analysis, especially those which have 
+natural topological properties (e.g. Hex). Games have been shown equivalent to
+certain topological spaces, and been used to demonstrate topological
+principles\cite{Cao02}\cite{Gale79}. Other games have been created by mathematicians
+to be played in topological spaces, some of which have been useful in proving
+certain mathematical ideas\cite{TopoGame}\cite{BanachGame}\cite{Kenderov93}.
+
+Poker is an extremely complex game. There are over 2.5 million, ${52 \choose 5}$,
+possible 5-card hands, and over $8\times10^{67}$, $52!$, possible card orderings
+of a deck. In addition, most poker games allow for between 2 and 5 rounds of betting,
+each of which can comprise up to 40 decision points, with each point allowing
+at least 3, and up to an arbitrarily large number, of possible actions by participants. On
+top of that, poker is a game of incomplete information. Any number of situations
+with very different values may appear identical to players without knowledge
+of their opponents' cards. It is true that some simpler forms of poker have been
+solved in a limited sense\cite{Bowling15}. However, general poker is complex
+enough that it is unlikely to be solved in a meaningful way any time soon.
+
+We propose to take a large set of poker hands and perform topological analysis of
+them. First, we would simply define a topology on a poker game, and look for any
+shape that may arise from the data we have. Then we could proceed to use topology
+to find which factors were the most significant (i.e. Is the shape of the data
+changed substantially, or very little, as we change some factor). Using that
+information, we may be able to create a simplified data set which still has
+most or all of the topological properties of the original data.
+
+Depending on our results from those efforts, we may be able to find an equivalence
+between poker and some topological games, or other games which have been
+studied with topology. Alternatively, we could use the
+simplified data to demonstrate a general strategy which could be expected to
+perform well at some form of poker. Or, if we see some interesting shape
+emerge as we study the data, we may be able to demonstrate some property of
+poker which has not been previously observed.
+
 \section*{Goals}
 % Goals listed from P2
 Our original goals, which we laid in our proposal, were to find a way to create
@@ -169,6 +204,30 @@ done. While the tasks we still have to complete are significant, they are also
 manageable and we feel good about our prospects for turning in an interesting
 presentation and a quality paper.
 
+In spite of the millions of hands of data which we have access to, and the fact
+that there are tens of thousands of hands available for some players, our data
+samples are not sufficient for the types of analysis we are attempting. There
+are two main issues at hand here. The first is that the inherent randomness of
+poker means that many types of situations only come up very rarely, so data
+about them converge very slowly. So slowly in fact that it is probable that
+what is being measured will have changed before sufficient data are collected
+to measure it. The second problem is that most of our hand histories do not
+tell us what the players’ hole cards are. Even for some players with many
+thousands of hands, we have fewer than 1000 hands with card information.
+With 144 different starting hand possibilities, that just isn’t enough repeats
+of each hand to smooth out variation in play, which makes our distance
+calculations suspect.
+Just to achieve figures as meaningful as the ones presented here, we have
+had to simplify our approach to just two cards and the first round of betting.
+Unfortunately, this excludes most of the human interaction which is the
+key aspect of interest in poker and other games. In order to bring more
+interaction into our analysis, we need to find some way to smooth out our
+initial steps considerably. Our results on this early data are already suspect,
+and we think it would be too much to ask of our data to yield to deeper
+probing of human interaction.
+That is why we think these figures we have chosen are suitable to represent
+both the promise of, and the problems with, our project so far.
+
 \newpage
 \begin{thebibliography}{9}
 
@@ -176,7 +235,7 @@ presentation and a quality paper.
   Wikimedia Foundation,
   \emph{Topology},
   [Online] Available:
-  https://en.wikipedia.org/wiki/Topology\#Introduction
+  https://en.wikipedia.org/wiki/Topology
 
 \bibitem{Bowling15}
   Bowling, Michael, et al.,
@@ -213,6 +272,20 @@ presentation and a quality paper.
   \emph{Banach-Mazur Game},
   [Online] Available:
   http://en.wikipedia.org/wiki/Banach-Mazur\_game.
+  
+\bibitem{PHHData}
+  Outflopped.com,
+  \emph{Obfuscated Datamined Hand Histories},
+  [Online] Available:
+  http://web.archive.org/web/20110205042259/
+  http://www.outflopped.com/questions/286/
+  obfuscated-datamined-hand-histories
+  
+\bibitem{MDSJ}
+  Pich, Christian,
+  \emph{MDSJ – Multidimensional Scaling for Java},
+  [Online] Available: 
+  http://algo.uni-konstanz.de/software/mdsj/
 
 	
 \end{thebibliography}
